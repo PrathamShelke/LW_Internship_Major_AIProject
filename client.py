@@ -16,7 +16,7 @@ def start_client(host, port):
     client_socket.close()
 
 if __name__ == "__main__":
-    HOST = '127.0.0.1'  # Use your server IP address here
-    PORT = 12345       # Use the same port number as in the server
+    HOST = 'enter host'  # Use your server IP address here
+    PORT = enterportno     # Use the same port number as in the server
 
     start_client(HOST, PORT)
