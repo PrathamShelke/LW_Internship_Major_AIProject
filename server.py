@@ -23,7 +23,7 @@ def start_server(host, port):
         conn.close()
 
 if __name__ == "__main__":
-    HOST = '127.0.0.1'  # Use your server IP address here
-    PORT = 12345       # Choose an available port number
+    HOST = 'enterhost'  # Use your server IP address here
+    PORT = enterport       # Choose an available port number
 
     start_server(HOST, PORT)
