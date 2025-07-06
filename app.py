@@ -14,7 +14,7 @@ import openai
 import io
 from PIL import Image
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "enter api key"
 
 def main():
     im = Image.open('lw.png')
@@ -292,8 +292,8 @@ def option10():
         if source_text:
             import os
             from langchain.llms import OpenAI
-            os.environ['SERPAPI_API_KEY'] = "877f5f38cfbb74e4b2bd74b05e4362a756b72ba370db4eb7f981f6e6eb29ccbe"
-            mykey = "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"
+            os.environ['SERPAPI_API_KEY'] = "enter serpapi key"
+            mykey = "enterkey"
             from langchain.agents import load_tools
             mytools = load_tools(tool_names=["serpapi"])
             myllm = OpenAI(temperature=0, openai_api_key=mykey)
@@ -418,7 +418,7 @@ def option13():
     import random
 
     # API key for accessing YouTube Data API
-    API_KEY = "AIzaSyABXiHrnpYfZIobBaFvbr84ACVyDPjumUI"
+    API_KEY = "enter yt api key"
 
     @st.cache
     def get_video_recommendations(query):
@@ -711,7 +711,7 @@ def option18():
     import matplotlib.pyplot as plt
 
     # Replace the following line with your OpenAI API key
-    openai.api_key = "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"
+    openai.api_key = "enter api key"
 
     def generate_image(text):
         res = openai.Image.create(
